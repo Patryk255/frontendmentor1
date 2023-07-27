@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  width: 37rem;
+  height: 24.8rem;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  align-items: flex-start;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image2 {
+  display: none;
+}
+
+
+
+.image,
+.text {
+  flex: 1;
+}
+
+.perfume {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  margin-top: 0;
+}
+
+.text {
+  padding: 2rem;
+  /* padding-right: 0; */
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  width: 70%;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  width: 14rem;
+}
+
+.actualprice,
+.oldprice {
+  float: left;
+}
+
+.oldprice {
+  color: hsl(228, 12%, 48%);
+  margin-top: 10px;
+}
+
+.actualprice {
+  color: #3b8066;
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  width: 90%;
+  height: 3rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  background: #3b8066;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.buttontext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button span {
+  margin: 0;
+  text-align: center;
+  float: left;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+
+.button:hover {
+  background: #1a4031;
+  cursor: pointer;
+}
+.card .image img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 10px 0px 0px 10px; */
+    overflow: hidden;
+    
+  }
+
+@media (max-width: 375px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .image1 {
+    display: none;
+  }
+  .image2 {
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+    
+  }
+ 
+}
